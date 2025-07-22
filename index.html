@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🔐 Gerador de Senhas Seguras</h1>
+    <div class="container">
+        <label>
+            Tamanho: <input type="number" id="length" min="4" max="50" value="12">
+        </label><br>
+        <label><input type="checkbox" id="uppercase" checked> Letras Maiúsculas</label><br>
+        <label><input type="checkbox" id="lowercase" checked> Letras Minúsculas</label><br>
+        <label><input type="checkbox" id="numbers" checked> Números</label><br>
+        <label><input type="checkbox" id="symbols" checked> Símbolos</label><br>
+
+        <button onclick="gerarSenha()">Gerar Senha</button>
+        <button onclick="copiarSenha()">Copiar</button>
+
+        <div class="senha" id="resultado">Sua senha aparecerá aqui</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
